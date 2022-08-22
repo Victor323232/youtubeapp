@@ -12,10 +12,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Youtuber"),
-        backgroundColor: Colors.black,
+        title: Image.asset(
+            "images/youtube.png",
+          width: 98,
+          height: 22,
+        ),
+        backgroundColor: Colors.white,
         iconTheme: IconThemeData(
-          color: Colors.red,
+          color: Colors.grey,
           opacity: 1
         ),
         actions: <Widget>[
