@@ -14,6 +14,10 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text("Youtuber"),
         backgroundColor: Colors.black,
+        iconTheme: IconThemeData(
+          color: Colors.red,
+          opacity: 1
+        ),
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.videocam),
