@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
         currentIndex: _indiciAtual,
         onTap: (indice){
           setState(() {
-             _indiciAtual = indice;
+
           });
         },
         type: BottomNavigationBarType.fixed,
