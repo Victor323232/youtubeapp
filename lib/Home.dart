@@ -12,6 +12,12 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    List <Widget> telas = [
+      Text("Inicio"),
+      Text("Em alta"),
+      Text("Inscricoes"),
+      Text("Biblioteca"),
+    ];
     return Scaffold(
       appBar: AppBar(
         title: Image.asset(
@@ -42,7 +48,7 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: Container(),
+      body: telas [_indiciAtual],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _indiciAtual,
         onTap: (indice){
