@@ -62,8 +62,11 @@ class _HomeState extends State<Home> {
             label: 'Em alta'
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
+              icon: Icon(Icons.subscriptions),
               label: 'Inscricoes'
+          ),BottomNavigationBarItem(
+              icon: Icon(Icons.folder),
+              label: 'Biblioteca'
           )
 
         ],
