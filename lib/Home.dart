@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:youtubeapp/telas/Biblioteca.dart';
+import 'package:youtubeapp/telas/EmAlta.dart';
+import 'package:youtubeapp/telas/Inicio.dart';
+import 'package:youtubeapp/telas/Inscriacao.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -13,10 +17,10 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     List <Widget> telas = [
-      Text("Inicio"),
-      Text("Em alta"),
-      Text("Inscricoes"),
-      Text("Biblioteca"),
+      Inicio(),
+      EmAlta(),
+      Inscricao(),
+      Biblioteca()
     ];
     return Scaffold(
       appBar: AppBar(
