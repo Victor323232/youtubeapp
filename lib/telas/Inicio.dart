@@ -10,9 +10,9 @@ class Inicio extends StatefulWidget {
 }
 
 class _InicioState extends State<Inicio> {
-  _listarVideos(){
+  _listarVideos(String pesquisa){
     Api api = Api();
-    return api.pesquisar("");
+    return api.pesquisar(pesquisa);
   }
   @override
   Widget build(BuildContext context) {
