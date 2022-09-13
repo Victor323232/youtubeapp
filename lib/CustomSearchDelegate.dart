@@ -47,6 +47,9 @@ class CustomSearchDelegate extends SearchDelegate <String> {
       return ListView.builder(
         itemBuilder: (context, index){
           return ListTile(
+            onTap: (){
+              close(context, lista[index]);
+            },
             title: Text(lista [index]),
           );
         },
