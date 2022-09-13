@@ -42,7 +42,7 @@ class CustomSearchDelegate extends SearchDelegate <String> {
       lista = [
         "android", "victor hugo",
       ].where( //percorre nossa lista
-              (texto) => texto.startsWith(query) //criar uma nova lista
+              (texto) => texto.toLowerCase().startsWith(query.toLowerCase()) //criar uma nova lista
       ).toList(); //converter para tolist
       return ListView.builder(
         itemBuilder: (context, index){
