@@ -3,7 +3,9 @@ import 'package:youtubeapp/telas/Api.dart';
 
 import '../model/Video.dart';
 class Inicio extends StatefulWidget {
-  const Inicio({Key? key}) : super(key: key);
+  String pesquisa;
+  Inicio(this.pesquisa);
+
 
   @override
   State<Inicio> createState() => _InicioState();
@@ -18,7 +20,7 @@ class _InicioState extends State<Inicio> {
   Widget build(BuildContext context) {
 
     return FutureBuilder <List<Video>>(
-        future: _listarVideos(""),
+        future: _listarVideos(widget.pesquisa),
       builder: (contex, snapshot){
           switch(snapshot.connectionState){
             case ConnectionState.none :
