@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    String resultado = "";
+    String _resultado = "";
     List <Widget> telas = [
       Inicio(),
       EmAlta(),
@@ -44,7 +44,7 @@ class _HomeState extends State<Home> {
                    context: context,
                    delegate: CustomSearchDelegate());
                setState(() {
-                 resultado = res!; //resultado receba a res
+                 _resultado = res!; //resultado receba a res
                });
               },
 
