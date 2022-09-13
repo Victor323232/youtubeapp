@@ -41,7 +41,9 @@ class CustomSearchDelegate extends SearchDelegate <String> {
     if(query.isNotEmpty){
       lista = [
         "android", "victor hugo",
-      ];
+      ].where( //percorre nossa lista
+              (texto) => texto.startsWith(query) //criar uma nova lista
+      ).toList(); //converter para tolist
       return ListView.builder(
         itemBuilder: (context, index){
           return ListTile(
